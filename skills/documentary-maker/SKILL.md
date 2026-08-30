@@ -21,10 +21,20 @@ Ken Burns editing synced to narration → final rendered MP4.
 
 ## Workflow (execute in this order)
 
-### PHASE 0 — Setup
-1. Create project dir: `project/<topic-slug>/` with subdirs `script/ audio/ images/ cards/ segments/ output/`.
-2. Ask user (if not given): topic, target duration (default 8–12 min for first build; the reference
-   style scales to 35+ min), language of narration (default English — the reference voice style).
+### PHASE 0 — Topic & Duration (MANDATORY — always do this FIRST, every single time)
+**Never start production without explicit user confirmation of BOTH topic and duration.**
+1. **Present topic options:** Show the user a curated menu of real Western story ideas from
+   `references/topic_ideas.md` (USA / UK / Italy / Germany / France etc.). Format each as:
+   country flag + title + 2-line hook + the Chekhov's Gun angle. Also highlight a Top-3
+   recommendation table. Invite the user to pick a number OR propose their own topic.
+2. **Ask duration explicitly** with these options:
+   - 8–12 min (recommended first build — tight & powerful)
+   - 15–20 min (full chapter structure)
+   - 30–36 min (full reference-video scale — longest production time)
+3. **WAIT for the user's answers.** Do not assume defaults. Only after the user confirms
+   topic + duration, proceed to setup.
+4. Create project dir: `project/<topic-slug>/` with subdirs `script/ audio/ images/ cards/ segments/ output/`.
+5. Confirm narration language (default English — the reference voice style).
 
 ### PHASE 1 — Research (real facts only)
 1. Use `web_search` / `crawler` to gather: key people, dates, dollar amounts, places, building names,
@@ -113,3 +123,6 @@ For `title_card` / `stat_card` / `map` scenes: `scripts/make_title_card.py` (see
 ## References
 - `references/style_bible.md` — the complete deconstruction of the reference video: structure,
   script formulas with real examples, visual treatment specs, audio specs. READ BEFORE WRITING.
+- `references/topic_ideas.md` — curated bank of real Western story ideas (with Chekhov's Gun
+  angles) to present to the user in PHASE 0. Refresh/extend it with web_search when needed.
+- `references/qc_checklist.md` — mandatory pre-delivery quality checks.

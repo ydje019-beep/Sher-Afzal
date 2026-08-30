@@ -8,3 +8,13 @@ work/
 qc/
 *.mp4
 *.log
+
+# Python bytecode
+__pycache__/
+*.pyc
+
+# documentary-maker generated project + test artifacts
+smoke_test/
+project/
+analysis/frames/
+analysis/audio.mp3

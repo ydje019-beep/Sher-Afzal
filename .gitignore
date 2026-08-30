@@ -1,2 +1,10 @@
 test_project/
 *.zip
+
+# Documentary build outputs (large binaries / regenerable)
+assets/
+voiceover/
+work/
+qc/
+*.mp4
+*.log
